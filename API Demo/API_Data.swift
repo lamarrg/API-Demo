@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+
+
+let API_Key: String = "892178d0358f074253bb55f846fba369"
