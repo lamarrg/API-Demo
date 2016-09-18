@@ -15,7 +15,6 @@
 		2AE5CF171D8D7908009A475A /* API_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5CF151D8D7908009A475A /* API_Demo.xcdatamodeld */; };
 		2AE5CF191D8D7908009A475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5CF181D8D7908009A475A /* Assets.xcassets */; };
 		2AE5CF1C1D8D7908009A475A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5CF1A1D8D7908009A475A /* LaunchScreen.storyboard */; };
-		2AE5CF261D8D7ED4009A475A /* API_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5CF251D8D7ED4009A475A /* API_Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		2AE5CF181D8D7908009A475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE5CF1B1D8D7908009A475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AE5CF1D1D8D7908009A475A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AE5CF251D8D7ED4009A475A /* API_Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				2A91DFDF1D8F36B800A2B968 /* API_Key.swift */,
-				2AE5CF251D8D7ED4009A475A /* API_Data.swift */,
 				2AE5CF0E1D8D7908009A475A /* AppDelegate.swift */,
 				2AE5CF101D8D7908009A475A /* ViewController.swift */,
 				2AE5CF121D8D7908009A475A /* Main.storyboard */,
@@ -150,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE5CF261D8D7ED4009A475A /* API_Data.swift in Sources */,
 				2AE5CF111D8D7908009A475A /* ViewController.swift in Sources */,
 				2AE5CF0F1D8D7908009A475A /* AppDelegate.swift in Sources */,
 				2AE5CF171D8D7908009A475A /* API_Demo.xcdatamodeld in Sources */,
