@@ -1,3 +1,4 @@
 # ignore file that has API key disclosure
 
 API Demo/API_Data.swift
+API Demo/API_Key.swift

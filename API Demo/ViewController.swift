@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func getForecast(cityName: String) {
         
         
-        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=\(API_Key)")!
+        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=\(cityName)&appid=\(API_Key)")!
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
@@ -56,6 +56,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         
                         // to get name element only
                         print(jsonResult["name"])
+                        print((jsonResult["main"] as! NSDictionary)["temp"])
+
+                        
+                        
                         
                         if let description = (((jsonResult as? NSDictionary)?["weather"] as? NSArray)?[0] as? NSDictionary)?["description"] as? String {
                             
@@ -63,13 +67,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             
                             DispatchQueue.main.sync(execute: {
                                 
-                                self.forecastLabel.text = description
+                                guard let weather = (jsonResult as? NSDictionary)?["main"],
+                                    let temp = (weather as! NSDictionary)["temp"] as? Int else {return};
+                                print("!!!!!!\(temp)")
+                                
+                                self.forecastLabel.text = "\(temp)\n\(description)"
+                                
+                                
                                 
                             })
                             
-                            
                         }
-                        
                         
                     } catch {
                         
@@ -85,7 +93,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         task.resume()
 
-        
     }
     
 
